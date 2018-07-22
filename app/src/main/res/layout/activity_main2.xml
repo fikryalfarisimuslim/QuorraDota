@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/bannerLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner Load : 0"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_below="@id/bannerLoad"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/bannerError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner Error : 0"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_below="@id/bannerError"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/bannerClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner Click : 0"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/interstialLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interstial Load : 0"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:layout_below="@+id/interstialLoad"
+        android:layout_alignParentRight="true"
+        android:id="@+id/interstialError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interstial Error : 0"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_below="@+id/interstialError"
+        android:layout_alignParentRight="true"
+        android:id="@+id/interstialClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Click : 0"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/currentLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="seconds remaining"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/currentLoad"
+        />
+
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:layout_below="@+id/timerText"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:layout_below="@id/interstialClick"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="START" />
+
+    <Button
+        android:layout_below="@id/bannerClick"
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="RESET" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/start">
+
+
+
+        <LinearLayout
+            android:id="@+id/admob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
