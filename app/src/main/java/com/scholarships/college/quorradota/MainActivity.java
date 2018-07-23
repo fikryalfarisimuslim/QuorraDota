@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         //mLevelTextView = (TextView) findViewById(R.id.level);
 
         // Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
-        if(mPref.getInterstial()%mPref.getAfterVideo()==0 && mPref.getStatVideo() && mPref.getAfterVideo()==0){
+        if(mPref.getInterstial()%mPref.getAfterVideo()==0 && mPref.getStatVideo() && mPref.getAfterVideo()!=0){
             mPref.setStatVideo(false);
             Toast.makeText(MainActivity.this, "Load Video", Toast.LENGTH_SHORT).show();
             loadVideo();
